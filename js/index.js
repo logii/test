@@ -24,14 +24,14 @@ function initPushwoosh() {
 		registerPushwooshAndroid();
 	}
 
-	if(device.platform == "iPhone" || device.platform == "iOS")
-	{
-		registerPushwooshIOS();
-	}
+	// if(device.platform == "iPhone" || device.platform == "iOS")
+	// {
+	// 	registerPushwooshIOS();
+	// }
 
-	if (device.platform == "Win32NT") {
-	    registerPushwooshWP();
-	}
+	// if (device.platform == "Win32NT") {
+	//     registerPushwooshWP();
+	// }
 }
 
 var app = {

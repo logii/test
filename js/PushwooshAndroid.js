@@ -18,7 +18,7 @@
  */
 
 function registerPushwooshAndroid() {
-
+	alert('registerPushwooshAndroid');
  	var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
 	//set push notifications handler
@@ -43,7 +43,7 @@ function registerPushwooshAndroid() {
 
 	//initialize Pushwoosh with projectid: "GOOGLE_PROJECT_ID", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
 	// pushNotification.onDeviceReady({ projectid: "60756016005", appid : "4FC89B6D14A655.46488481" });
-	pushNotification.onDeviceReady({ projectid: "65FA7-E9F62", appid : "920319948945" });
+	pushNotification.onDeviceReady({ projectid: "920319948945", appid : "65FA7-E9F62" });
 
 	//register for push notifications
 	pushNotification.registerDevice(
@@ -64,7 +64,7 @@ function registerPushwooshAndroid() {
 function onPushwooshAndroidInitialized(pushToken)
 {
 	//output the token to the console
-	console.warn('push token: ' + pushToken);
+	alert('push token: ' + pushToken);
 
 	var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
